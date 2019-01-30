@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script type='text/javascript' src='js/database.js'></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+</head>
+
+<body>
+    <div class='container-fluid bg-primary'>
+        <a href="./search.html">
+            <h1>WorkEasy</h1>
+        </a>
+    </div>
+    
+    <div class='container-fluid'>
+        <h1>Profile Builder:</h1>
+    </div>
+    <div id="formarea">
+        <form id="formone">
+            <div id="navbar">
+                <div id="home"><a href="./tutorial_start.html" style="color: white;"><b>Home</b></a></div>
+                <a href="form_submit.html"><b>Previous ></b></a>
+                <a href="search.html"><b> Search ></b></a>
+                <a href="job_posting.html"><b> Job Post</b></a>
+            </div>
+
+            <div id='experience'>
+                Experience:<br>
+                <textarea id="exp1" name="message" rows="10px" cols="30px"> Type your Experience</textarea> <br>
+                <!-- create text area for experience. -->
+            </div>
+            <button id="add1" type="button" class="btn btn-warning">+</button><br>
+
+            <div id='project'>
+                Project:<br>
+                <textarea id="prj1" name="message" rows="10px" cols="30px"> Type your Project</textarea> <br>
+                  <!-- create text area for project. -->
+            </div>
+
+            <button id="add2" type="button" class="btn btn-warning">+</button><br>
+
+            <div id='volunteer'>
+                Volunteer:<br>
+                <textarea id="vol1" name="message" rows="10px" cols="30px"> Type Your volunteer</textarea> <br>
+                 <!-- create text area for volunteer. -->
+            </div>
+            <button id="add3" type="button" class="btn btn-warning">+</button><br>
+
+        </form>
+        <br>
+        <div class='container text-center'>
+            <button id="submit" type="button" class="btn btn-warning">Submit</button>
+            <!-- Submit button  send data to firebase-->
+            <a href='search.html'>
+                <button type="button" class="btn btn-warning">Skip</button>
+                <!-- Skip button to skip to search -->
+
+            </a>
+        </div>
+
+    </div>
+
+    <script src='./js/form_experience.js'></script>
+</body>
+
+</html>

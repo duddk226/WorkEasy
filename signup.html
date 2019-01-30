@@ -1,0 +1,33 @@
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+            <title>WorkEasy! Sign UP Page.</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" href="./css/general.css">
+            <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+            <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js">//Include FirebaseUI</script>
+            <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+        
+            <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+            <script type='text/javascript' src='./js/database.js'></script>
+            <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+            <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+        </head>
+
+    <body>                               
+        <div class='container-fluid bg-primary'><!--Populate header for webpage.-->
+            <a href="./search.html">
+                <h1>WorkEasy</h1>
+            </a>
+        </div>
+        <h1 id="banner"> </h1>                                         <!--Populate title for signup widget.-->
+        <h1 id="quote"> </h1>                                          
+        <h1 id="firebaseui-auth-container" class="center"> </h1>       <!--Populate container for signup webpage.-->
+        <script src='./js/signup.js'></script>                         <!--Generate widget for email signup by calling signup.js.--> 
+    </body>
+
+    </html>

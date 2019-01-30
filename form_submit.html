@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script type='text/javascript' src='js/database.js'></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+</head>
+
+<body>
+    <div class='container-fluid bg-primary'>       
+        <a href="./search.html">                        <!--Generate header for entire page.-->
+            <h1>WorkEasy</h1>
+        </a>
+    </div>
+
+    <div class='container-fluid'>
+        <h1>Profile Builder:</h1>                       <!--Generate title for entire page.-->
+    </div>
+    <div id="formarea">
+        <form id="formone">                             <!--Generate form for profile builder.-->
+            <div id="navbar">                           <!--Generate nav bar for page.-->
+                <div id="home"><a href="./tutorial_start.html" style="color: white;"><b>Home</b></a></div>
+                <a href="form_experience.html"><b>Experience></b></a>
+                <a href="search.html"><b>Search></b></a>
+                <a href="job_posting.html"><b> Job Post</b></a>
+            </div rows="10px" cols="30px">
+            First name: <br>
+            <textarea id="fn" class="input" rows="1px" cols="30px">First Name</textarea>
+            <br>Last name: <br>
+            <textarea id="ln" class="input" rows="1px" cols="30px">Last name</textarea>
+            <br><br><b>Address:</b> <br>
+            <br>Street Address: <br>
+            <textarea id="addy" class="input" rows="1px" cols="30px">123 Fake Street</textarea>
+            <br>City: <br>
+            <textarea id="city" class="input" rows="1px" cols="30px">Vancouver</textarea>
+            <br>Province: <br>
+            <textarea id="province" class="input" rows="1px" cols="30px">British Columbia</textarea>
+            <br>Country: <br>
+            <textarea id="country" class="input" rows="1px" cols="30px">Canada</textarea>
+            <br>Postal Code: <br>
+            <textarea id="pc" class="input" rows="1px" cols="30px">V5V 5V5</textarea>
+            <br>Phone Number: <br>
+            <textarea id="phone" class="input" rows="1px" cols="30px">778-111-1111</textarea>
+
+        </form>
+        <br>
+        <div class='container text-center'>
+            <button id="submit" type="button" class="btn btn-warning">Continue</button>   <!--Generate button that will push data to firebase.-->
+
+            <a href='./search.html'>                                                
+                <button type="button" class="btn btn-link">Skip</button>                  <!--Genearte skip button that will jump to search page.-->
+            </a>
+        </div>
+    </div>
+
+    <script src='./js/form_submit.js'></script>                                           <!--Call form_sumbit.js to perform all logic required for this page.-->
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WorkEasy - Submit Job Posting</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script type='text/javascript' src='./js/database.js'></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+</head>
+<body>
+    <div class='container-fluid bg-primary text-white'>
+            <h1>WorkEasy</h1>
+    </div>
+
+    <div class = 'container' id='body'>
+        <div class='container-fluid'>
+            <h1>Job Posting Submission</h1>
+            <p> Thanks for choosing WorkEasy! Please fill in the following form to 
+                add your job to our site!
+            </p>
+        </div>
+        <div id='employer-form' class='employer-form col-md-offset-1 col-md-10 content'>
+            <form>
+                <h3>Job Title:</h3> 
+                <input type='text' name='job-title' id='job-title'><br>
+                <h3>Employer:</h3> 
+                <input type='text' name='employer' id='job-employer'><br>
+                <h3>City:</h3>
+                <input type='text' name='city' id='job-city'><br>
+                <h3>Description:</h3>
+                <input type='text' name='job-description' id='job-description'><br>
+                <h3>Tags:</h3>
+                <input type='text' name='job-tag' id='job-tag'><br>
+            </form>
+            <br>
+            <button class='btn-warning' id='btn-submit'>Submit</button>
+        </div>
+
+    </div>
+
+    <script src='./js/add_data.js'></script>
+    
+</body>
+</html>
